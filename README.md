@@ -1,3 +1,3 @@
 # Interaction Design Fall 2025
 Class work for Fall 2025, will go private after the semester. <br>
-Currently houses: `#777700`	Nothing.
+Currently houses:	Nothing.
