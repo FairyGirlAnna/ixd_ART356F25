@@ -36,7 +36,7 @@ function setup() {
   face2 = loadImage('/images/snowface2.png');
   face3 = loadImage('/https://github.com/FairyGirlAnna/ixd_ART356F25/blob/main/Assignments/SnowmanExercise/images/snowface3.png?raw=true');
   bod1 = loadImage('/https://github.com/FairyGirlAnna/ixd_ART356F25/blob/main/Assignments/SnowmanExercise/images/snowbod1.png?raw=true');
-  bod2 = loadImage('/https://github.com/FairyGirlAnna/ixd_ART356F25/blob/main/Assignments/SnowmanExercise/images/snowbod2.png?raw=true');
+  bod2 = loadImage('https://raw.githubusercontent.com/FairyGirlAnna/ixd_ART356F25/refs/heads/main/Assignments/SnowmanExercise/images/snowbod2.png');
   bod3 = loadImage('/https://github.com/FairyGirlAnna/ixd_ART356F25/blob/main/Assignments/SnowmanExercise/images/snowbod3.png?raw=true');
   imageMode(CENTER);
 }
