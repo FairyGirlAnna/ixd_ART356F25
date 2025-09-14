@@ -32,12 +32,12 @@ function setup() {
   frameRate(10);
 
 //the preloaderrrr
-  face1 = loadImage("./images/snowface1.png");
-  face2 = loadImage("./images/snowface2.png");
-  face3 = loadImage("./images/snowface3.png");
-  bod1 = loadImage("./images/snowbod1.png");
-  bod2 = loadImage("./images/snowbod2.png");
-  bod3 = loadImage("./images/snowbod3.png");
+  face1 = loadImage("./images/snowface1.png?raw=true");
+  face2 = loadImage("./images/snowface2.png?raw=true");
+  face3 = loadImage("./images/snowface3.png?raw=true");
+  bod1 = loadImage("./images/snowbod1.png?raw=true");
+  bod2 = loadImage("./images/snowbod2.png?raw=true");
+  bod3 = loadImage("./images/snowbod3.png?raw=true");
   imageMode(CENTER);
 }
 
