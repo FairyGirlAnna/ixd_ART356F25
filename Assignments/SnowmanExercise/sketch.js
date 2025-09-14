@@ -32,8 +32,8 @@ function setup() {
   frameRate(10);
 
 //the preloaderrrr
-  face1 = loadImage('/images/snowface1.png?raw=true');
-  face2 = loadImage('/images/snowface2.png');
+  face1 = loadImage('./images/snowface1.png');
+  face2 = loadImage('./images/snowface2.png');
   face3 = loadImage('/https://github.com/FairyGirlAnna/ixd_ART356F25/blob/main/Assignments/SnowmanExercise/images/snowface3.png?raw=true');
   bod1 = loadImage('/https://github.com/FairyGirlAnna/ixd_ART356F25/blob/main/Assignments/SnowmanExercise/images/snowbod1.png?raw=true');
   bod2 = loadImage('https://raw.githubusercontent.com/FairyGirlAnna/ixd_ART356F25/refs/heads/main/Assignments/SnowmanExercise/images/snowbod2.png');
