@@ -33,12 +33,12 @@ let font;
 
 function preload(){
   //the preloaderrrr
-  face1 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/SnowmanExercise/images/snowface1.png");
-  face2 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/SnowmanExercise/images/snowface2.png");
-  face3 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/SnowmanExercise/images/snowface3.png");
-  bod1 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/SnowmanExercise/images/snowbod1.png");
-  bod2 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/SnowmanExercise/images/snowbod2.png");
-  bod3 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/SnowmanExercise/images/snowbod3.png");
+  face1 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/Project1/images/snowface1.png");
+  face2 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/Project1/images/snowface2.png");
+  face3 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/Project1/images/snowface3.png");
+  bod1 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/Project1/images/snowbod1.png");
+  bod2 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/Project1/images/snowbod2.png");
+  bod3 = loadImage("https://fairygirlanna.github.io/ixd_ART356F25/Assignments/Project1/images/snowbod3.png");
   font = loadFont("Splatfont2.ttf")
 }
 
