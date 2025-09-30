@@ -144,29 +144,20 @@ if (keyIsDown(83) || triggerbodyswitch == 1){
 
 //shrinking the top
 if (keyIsDown(90) || triggertsizeswitch == 1){
-  topballsize = topballsize-50;
-  if (topballsize < 50){
-    topballsize = topballsize + 200;
-  }
-    triggertsizeswitch = 0;
+  topballsize = (random(250));
+  triggerbsizeswitch = 0;
 }
 
 //shrinking the middle
   if (keyIsDown(88)|| triggermsizeswitch == 1){
-    midballsize = midballsize-50;
-    if (midballsize < 50){
-      midballsize = midballsize + 200;
-    }
-      triggermsizeswitch = 0;
+  midballsize = (random(250));
+  triggerbsizeswitch = 0;
   }
 
 //shrinking the bottom
 if (keyIsDown(67)|| triggerbsizeswitch == 1){
-  botballsize = botballsize-50;
-  if (botballsize < 50){
-    botballsize = botballsize + 200;
-  }
-    triggerbsizeswitch = 0;
+  botballsize = (random(250));
+  triggerbsizeswitch = 0;
 }
   
 //adjusting pos for shrink
