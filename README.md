@@ -1,6 +1,6 @@
 # Interaction Design Fall 2025
 Class work for Fall 2025, will go private after the semester. <br>
-Currently houses:	Nothing.
+Currently houses:	Some project stuff
 
 <details>
 <summary><h2>Text Styles</h2></summary>
