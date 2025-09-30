@@ -144,19 +144,19 @@ if (keyIsDown(83) || triggerbodyswitch == 1){
 
 //shrinking the top
 if (keyIsDown(90) || triggertsizeswitch == 1){
-  topballsize = (random(250);
+  topballsize = (random(250));
   triggertsizeswitch = 0;
 }
 
 //shrinking the middle
   if (keyIsDown(88)|| triggermsizeswitch == 1){
-  midballsize = (random(250);
+  midballsize = (random(250));
   triggermsizeswitch = 0;
   }
 
 //shrinking the bottom
 if (keyIsDown(67)|| triggerbsizeswitch == 1){
-  botballsize = (random(250);
+  botballsize = (random(250));
   triggerbsizeswitch = 0;
 }
   
@@ -169,7 +169,7 @@ topballpos = ((midballpos-100) - (midballsize/2)) - (topballsize/2 - 100);
 
 
 //buttons you can push
-    fill(200,150,50);
+    fill(250,200,100);
   rect(75,75,75,75,15);
   rect(75,175,75,75,15);
   rect(75,275,75,75,15);
