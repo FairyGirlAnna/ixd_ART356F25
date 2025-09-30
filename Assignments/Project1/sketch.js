@@ -144,19 +144,19 @@ if (keyIsDown(83) || triggerbodyswitch == 1){
 
 //shrinking the top
 if (keyIsDown(90) || triggertsizeswitch == 1){
-  topballsize = (random(250));
-  triggerbsizeswitch = 0;
+  topballsize = (random(250);
+  triggertsizeswitch = 0;
 }
 
 //shrinking the middle
   if (keyIsDown(88)|| triggermsizeswitch == 1){
-  midballsize = (random(250));
-  triggerbsizeswitch = 0;
+  midballsize = (random(250);
+  triggermsizeswitch = 0;
   }
 
 //shrinking the bottom
 if (keyIsDown(67)|| triggerbsizeswitch == 1){
-  botballsize = (random(250));
+  botballsize = (random(250);
   triggerbsizeswitch = 0;
 }
   
