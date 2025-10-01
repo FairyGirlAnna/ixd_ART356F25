@@ -1,4 +1,10 @@
+@font-face {
+  font-family: SplatFont; /* set name */
+  src: url(Splatfont2.ttf); /* url of the font */
+}
+
 html, body {
+  font-family: SplatFont; /* use font */
   margin: 0;
   padding: 0;
   text-align: center;
