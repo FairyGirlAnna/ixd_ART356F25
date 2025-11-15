@@ -16,14 +16,14 @@ function setup() {
 function search(searchquery){
   let api = "http://api.giphy.com/v1/gifs/search?q=" + searchquery +"&api_key=dR9yt211Fo9YH2cZRGeELLyKLGKWLh0W&limit=5";
   loadJSON(api, gotData);
-  //api.done(function(data) { console.log("success got data", data); });
-  let storeddata = data;
+  api.done(gotData(data));
   createImg(storeddata.data[0].images.original.url);
   
 }
 
-function gotData(){
-  createImg(data.data[0].images.original.url);
+function gotData(data){
+  let storeddata = data;
+  createImg(storeddata.data[0].images.original.url);
 }
 
 function draw() {
