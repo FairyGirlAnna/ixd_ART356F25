@@ -14,7 +14,7 @@ function setup() {
 }
 
 function search(searchquery){
-  let apiurl = "http://api.giphy.com/v1/gifs/search?q=" + searchquery +"&api_key=dR9yt211Fo9YH2cZRGeELLyKLGKWLh0W&limit=5";
+  let apiurl = "http://api.giphy.com/v1/gifs/search?q=" + searchquery + "&api_key=dR9yt211Fo9YH2cZRGeELLyKLGKWLh0W&limit=5";
   loadJSON(apiurl, gotData);
   //api.done(function(data) { console.log("success got data", data); });
   console.log("success got data", data); 
