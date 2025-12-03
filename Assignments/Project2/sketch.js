@@ -13,17 +13,18 @@ function setup() {
   
 }
 
-function search(searchquery){
-  let api = "http://api.giphy.com/v1/gifs/search?q=" + searchquery +"&api_key=dR9yt211Fo9YH2cZRGeELLyKLGKWLh0W&limit=5";
+function search(temptitle){
+  api = "http://api.giphy.com/v1/gifs/search?q=" + temptitle + "&api_key=dR9yt211Fo9YH2cZRGeELLyKLGKWLh0W&limit=5";
+  console.log(temptitle);
   loadJSON(api, gotData);
   api.done(gotData(data));
-  createImg(storeddata.data[0].images.original.url);
+  //createImg(storeddata.data[int(random(0,4))].images.original.url);
   
 }
 
 function gotData(data){
   let storeddata = data;
-  createImg(storeddata.data[0].images.original.url);
+  createImg(storeddata.data[int(random(0,4))].images.original.url, 40, 40);
 }
 
 function draw() {
@@ -48,40 +49,40 @@ function draw() {
 
 
 
-  switch (title) {
-    case "Dog":
+//   switch (title) {
+//     case "Dog":
       
-      text ("Top tags for " + title + " GIFS:", width/2, 450);
-      break;
+//       text ("Top tags for " + title + " GIFS:", width/2, 450);
+//       break;
     
-    case "Cat":
+//     case "Cat":
       
-      text ("Top tags for " + title + " GIFS:", width/2, 450);
-      break;
+//       text ("Top tags for " + title + " GIFS:", width/2, 450);
+//       break;
 
-    case "Spongebob":
+//     case "Spongebob":
       
-      text ("Top tags for " + title + " GIFS:", width/2, 450);
-      break;
+//       text ("Top tags for " + title + " GIFS:", width/2, 450);
+//       break;
 
-    case "Simpsons":
+//     case "Simpsons":
       
-      text ("Top tags for " + title + " GIFS:", width/2, 450);
-      break;
+//       text ("Top tags for " + title + " GIFS:", width/2, 450);
+//       break;
     
-    case "Halloween":
+//     case "Halloween":
       
-      text ("Top tags for " + title + " GIFS:", width/2, 450);
-      break;
+//       text ("Top tags for " + title + " GIFS:", width/2, 450);
+//       break;
 
-    case "Christmas":
+//     case "Christmas":
       
-      text ("Top tags for " + title + " GIFS:", width/2, 450);
-      break;
+//       text ("Top tags for " + title + " GIFS:", width/2, 450);
+//       break;
 
-    default:
-      break;
-  }
+//     default:
+//       break;
+//   }
 }
 
 
@@ -92,5 +93,5 @@ function mousePressed(){
       title = titles[tempselection];
     }
   }
-  search(storeddata);
+  search(title);
 }
