@@ -1,7 +1,7 @@
 let tumbler, x, y, sides, len, angle;
 
 let walltop, wallbot, wallleft, wallright, scorezone;
-let storeditems = 10;
+let storeditems = 0;
 
 let ballstorage = [];
 let numball = 0;
