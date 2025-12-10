@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -9,4 +8,8 @@ body {
 canvas {
   display: block;
   margin: auto;
+}
+
+h2, p {
+  color: #fff;
 }

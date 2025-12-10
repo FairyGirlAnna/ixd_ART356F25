@@ -7,6 +7,8 @@ let ballstorage = [];
 let numball = 0;
 let dropstage = 0;
 
+let ballgroup = 0;
+
 function setup() {
 	textSize(32);
 	//textAlign(CENTER);
@@ -43,6 +45,7 @@ function setup() {
   dropSprite();
 
   clawsprite = new Sprite(200, 200, 25, 100, "kinematic");
+  
 
   strokeJoin("round");
 }
@@ -65,7 +68,7 @@ function draw() {
 		clawsprite.vel.y = -5;
 		} else {
 		clawsprite.vel.y = 0;
-		dropstage = 0;
+		dropstage = 3;
 	}
   }
 
@@ -74,15 +77,18 @@ function draw() {
       dropSprite();
     }
 	dropstage = 0;
+  storeditems = 0;
   }
 
 	fill(255);
 	text('Stored Prizes: ' + storeditems, 350, 650);
-	clawsprite.collides(penta, clawGrab);
+	clawsprite.overlap(ballgroup, clawGrab);
 }
 
-function clawGrab(){
-	penta.pos.y = 50;
+function clawGrab(clawsprite, penta){
+  penta.remove();
+	//ballgroup.pos.y = 50;
+  storeditems++;
 }
 
 
@@ -117,14 +123,15 @@ function update() {
 }
 
 function dropSprite() {
-  // for (let i = 0; i < array.length; i++) {
-
-  // }
+  if (ballgroup == 0){ 
+    ballgroup = new Group();
+  }
+ 
 
   let temprandom = 1; //random(0.05, 0.09);
   len = (height * temprandom) / sides;
   if (keyIsDown(32)){
-	penta = new Sprite(clawsprite.x, clawsprite.y+50, len, "dodecagon");
+	penta = new Sprite(clawsprite.x, clawsprite.y+85, len, "dodecagon");
   } else{
 	penta = new Sprite(mouse.x || x, mouse.y || y, len, "dodecagon");
   }
@@ -133,7 +140,7 @@ function dropSprite() {
   //penta.image = 'capsule.png';
   ballstorage.push(temprandom * 2);
   penta.d = random(20, 40);
-
+  ballgroup.add(penta);
   numball++;
   //penta.image.scale = temprandom*2;
 }
