@@ -36,7 +36,7 @@ function setup() {
   wallright = new Sprite(width - 100, y, 20, 500, "static");
   scorezone = new Sprite(200, y + 150, 20, 200, "static");
 
-  machinecolor = color(random(255), random(255), random(255));
+  machinecolor = color(50,50,50);
   walltop.color = machinecolor;
   wallbot.color = machinecolor;
   wallleft.color = machinecolor;
@@ -45,13 +45,28 @@ function setup() {
   dropSprite();
 
   clawsprite = new Sprite(200, 200, 25, 100, "kinematic");
+  clawsprite.color = "#1dd13bff";
+
+  ufo = new Sprite(clawsprite.pos.x, clawsprite.pos.y, 25, 100, "kinematic");
+  ufo.image = 'ufo.png';
+
+  border = new Sprite(350, 350, "none");
+  border.scale.x = 1.5;
+  border.scale.y = 1.8;
+  //border.layer = -1;
+
+  border.image = 'plainborder.png';
+
   
+
 
   strokeJoin("round");
 }
 
 function draw() {
   claw();
+  ufo.pos.x = clawsprite.pos.x;
+  ufo.pos.y = clawsprite.pos.y;
 
   if (dropstage == 1){
 	if (clawsprite.pos.y < 520){
@@ -81,8 +96,11 @@ function draw() {
   }
 
 	fill(255);
-	text('Stored Prizes: ' + storeditems, 350, 650);
+	text('Stored Prizes: ' + storeditems, 350, 675);
 	clawsprite.overlap(ballgroup, clawGrab);
+
+  fill(color(20,20,20));
+  rect(50, 75, 200, 550);
 }
 
 function clawGrab(clawsprite, penta){
@@ -137,12 +155,13 @@ function dropSprite() {
   }
   
   penta.color = "#b7ebff";
-  //penta.image = 'capsule.png';
+  
   ballstorage.push(temprandom * 2);
   penta.d = random(20, 40);
   ballgroup.add(penta);
   numball++;
-  //penta.image.scale = temprandom*2;
+  //penta.image = 'capsule.png';
+  //penta.image.scale = penta.d/50;
 }
 
 function keyPressed() {
